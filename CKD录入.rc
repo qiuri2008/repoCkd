@@ -1,0 +1,400 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CKD录入.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CKD录入.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CKD录入"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,14,20,20
+    LTEXT           "CKD录入 8.0版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CKD_DIALOG DIALOGEX 0, 0, 440, 267
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CKD录入-v10.2 (语音版)"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_PAGE_SHIPMARK DIALOG  0, 0, 421, 233
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "唛头格式"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "载入",IDC_BUTTON1,319,183,50,14
+    EDITTEXT        IDC_EDIT_11,33,55,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_21,33,98,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_31,33,140,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_12,120,55,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_22,120,98,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_32,120,140,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_13,234,55,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_23,234,98,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_33,234,140,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_14,310,55,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_24,310,98,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_34,310,140,65,14,ES_AUTOHSCROLL
+    CONTROL         "CKD",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    41,23,28,10
+    CONTROL         "ASS'Y",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,147,23,36,
+                    10
+    CONTROL         "Spare Part",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,261,
+                    23,56,10
+    CONTROL         "语音提示",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,38,183,68,10
+END
+
+IDD_PAGE_CKD DIALOGEX 0, 0, 413, 233
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "CKD录入"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_RECEIVE,324,171,70,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,16,20,260,153
+    PUSHBUTTON      "Button1",IDC_BUTTON1,153,7,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_PART,324,77,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INBOX,324,49,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTBOX,324,133,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QTY,324,105,32,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Button2",IDC_BUTTON2,210,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "保存",IDC_BTN_SAVE,241,199,36,14
+    LTEXT           "部品号:",IDC_STATIC,291,79,30,8
+    LTEXT           "数量:",IDC_STATIC,291,107,20,8
+    LTEXT           "内箱:",IDC_STATIC,291,51,30,8
+    LTEXT           "外箱:",IDC_STATIC,291,135,30,8
+    LTEXT           "录入:",IDC_STATIC,291,173,20,8
+    PUSHBUTTON      "载入",IDC_BTN_SHIPPINGMARK,191,199,36,14
+    EDITTEXT        IDC_EDIT_UNDO,38,199,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "刷新",IDC_BTN_RELOAD,91,199,36,14
+    LTEXT           "撤销:",IDC_STATIC,16,201,20,8
+    LTEXT           "X",IDC_STATIC,362,108,8,8
+    EDITTEXT        IDC_EDIT_RATIO,372,105,22,14,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "校验",IDC_BTN_CHECK,141,199,36,14
+    EDITTEXT        IDC_EDIT_ZCS,324,18,70,14,ES_AUTOHSCROLL
+    LTEXT           "套件号:",IDC_STATIC,291,22,30,8
+    CONTROL         "箱单",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,303,218,31,10
+    CONTROL         "统计",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,339,218,31,10
+    CONTROL         "唛头",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,373,218,31,10
+END
+
+IDD_DLG_SAVE DIALOGEX 0, 0, 232, 133
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存设置："
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,50,112,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,112,50,14
+    CONTROL         "阿根廷",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,131,28,40,10
+    CONTROL         "印度",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,131,46,32,
+                    10
+    CONTROL         "箱单",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    44,28,32,10
+    CONTROL         "统计",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    44,52,32,10
+    CONTROL         "唛头",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    44,78,32,10
+    CONTROL         "仅保存本次录入",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,82,72,10
+    GROUPBOX        "保存选项",IDC_STATIC,28,12,63,86
+    GROUPBOX        "客户设置",IDC_STATIC,125,12,80,88
+    CONTROL         "工厂",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,131,63,32,
+                    10
+END
+
+IDD_PAGE_LIST DIALOG  0, 0, 391, 225
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "序号清单"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,13,17,246,175
+    PUSHBUTTON      "导入清单",IDC_BUTTON1,297,25,63,14
+    PUSHBUTTON      "保存清单",IDC_BUTTON2,297,59,63,14
+    EDITTEXT        IDC_EDIT_ADMIN,302,168,63,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "管理员密码:",IDC_STATIC,302,156,47,8
+    PUSHBUTTON      ">>保存序号清单",IDC_BTN_SAVE_BOM,297,124,63,14
+    PUSHBUTTON      "载入序号清单",IDC_BTN_LOAD_BOM,297,90,63,14
+END
+
+IDD_PAGE_WEIGHT DIALOG  0, 0, 412, 241
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "托盘重量"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1_RECEIVE,329,167,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_OUTBOX,329,109,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_BIGBOX,329,80,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_ZCS,329,51,57,14,ES_AUTOHSCROLL
+    LTEXT           "录入:",IDC_STATIC,300,169,20,8
+    LTEXT           "套件:",IDC_STATIC,302,56,20,8
+    LTEXT           "托盘:",IDC_STATIC,300,85,20,8
+    LTEXT           "外箱:",IDC_STATIC,300,113,20,8
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,25,21,257,164
+    EDITTEXT        IDC_EDIT1,61,209,53,14,ES_AUTOHSCROLL
+    CTEXT           "托盘重量",IDC_STATIC_1,308,17,87,22
+    PUSHBUTTON      "载入重量清单",IDC_BTN_LOAD,149,209,54,14
+    PUSHBUTTON      "保存",IDC_BTN1_SAVE,224,209,50,14
+    RTEXT           "查 询:",IDC_STATIC_LOOKUP,21,210,34,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_OUTBOX_WEIGHT,329,138,57,14,ES_AUTOHSCROLL
+    LTEXT           "重量:",IDC_STATIC,300,141,20,8
+END
+
+IDD_PAGE_CHECK DIALOGEX 0, 0, 433, 241
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "部品-供应商核对"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_CHECK_RECEIVE,296,170,116,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,10,230,197
+    CONTROL         "检验",IDC_RADIO_CHECK,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,271,23,32,10
+    CONTROL         "库录入",IDC_RADIO_LOGIN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,323,24,40,10
+    CONTROL         "库移除",IDC_RADIO_LOGOUT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,372,24,40,10
+    GROUPBOX        "扫描方式:",IDC_STATIC,258,12,158,28
+    EDITTEXT        IDC_EDIT_KITKING,296,93,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROVIDER,296,127,116,14,ES_AUTOHSCROLL
+    LTEXT           "部品号:",IDC_STATIC,254,96,29,8
+    LTEXT           "供应商号:",IDC_STATIC,254,128,37,8
+    LTEXT           "录入:",IDC_STATIC,254,173,21,8
+    EDITTEXT        IDC_EDIT_ZCS,296,65,68,14,ES_AUTOHSCROLL
+    LTEXT           "套件号:",IDC_STATIC,254,67,29,8
+    EDITTEXT        IDC_EDIT_QTY,369,93,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "载入",IDC_BTN_LOAD,369,65,40,14
+    PUSHBUTTON      "录入",IDC_BTN_LOGIN,299,147,50,14
+    PUSHBUTTON      "移除",IDC_BTN_LOGOUT,361,147,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "战诚科技"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "CKD录入"
+            VALUE "LegalCopyright", "版权所有 (C) 2013"
+            VALUE "OriginalFilename", "CKD录入.EXE"
+            VALUE "ProductName", "rrrrrrrrrrrrrrrr"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CKD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_PAGE_SHIPMARK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_PAGE_CKD, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_PAGE_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_PAGE_WEIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_PAGE_CHECK, DIALOG
+    BEGIN
+        RIGHTMARGIN, 430
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CKD录入(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CKD录入.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
